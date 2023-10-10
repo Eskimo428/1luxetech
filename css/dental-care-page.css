@@ -1,0 +1,767 @@
+
+/*PULPITIS-PAGE*/
+
+.pulpitis__title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;   
+}
+
+.pulpitis__container{
+   margin-bottom: 100px;
+}
+
+.pulpitis__services-link{
+    color: #0095DA;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.pulpitis__link{
+    margin-bottom: 40px;
+}
+
+.pulpitis__stage-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;   
+    margin-top: 100px; 
+}
+
+.pulpitis__stage-descr{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+    margin-bottom: 56px;
+}
+
+.pulpitis__blocks {
+    display: flex;
+    width: 100%; /* Занимать всю доступную ширину */
+    flex-wrap: wrap;
+}
+
+.pulpitis__block-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 350px;
+    height: 241px;
+    margin-bottom: 26px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: #F4F4F4;
+  }
+
+.pulpitis-page{
+  margin-top: 48px;
+}
+
+.pulpitis__content{
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.pulpitis__arrow{
+    margin-right: 5px;
+}
+
+.pulpitis__right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0 0 44px 62px;
+}
+
+.pulpitis__right-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929;
+    padding-bottom: 24px;
+}
+
+
+/* Стили для табов */
+.tabs {
+    display: flex;
+    padding-bottom: 30px;
+    cursor: pointer;
+    background-color: inherit;
+    color: #B1B1B1;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.tab {
+    padding: 5px 10px;
+    margin-right: 10px; /* Добавляем отступ между табами */
+}
+
+/* Стили для активного таба */
+.tab.active {
+    color: #0095DA;
+    font-weight: 700;
+}
+
+/* Стили для содержимого табов */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.pulpitis__tab-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+}
+
+.pulpitis__block-item {
+    text-align: center;
+}
+
+.item-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 32px;
+}
+
+.item-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #0095DA;
+    margin-bottom: 19px;
+}
+
+.item-line {
+    width: 80%;
+    border-bottom: 1px solid #0095DA;
+    margin: 0 auto 24px auto;
+}
+
+.item-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.pulpitis__contacts{
+    margin-top: 76px;
+}
+
+
+
+/*CARIES-PAGE*/
+
+.caries__content{
+    display: flex;
+}
+
+.caries__left {
+    width: 40%;
+    float: left;
+  }
+
+.caries__right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0 0 0 62px;
+}
+
+.caries__list{
+    list-style-type: disc;
+}
+
+.caries__right-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929;
+    padding-bottom: 24px;
+}
+
+.caries__block-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 260px;
+    height: 241px;
+    margin-bottom: 26px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: #F4F4F4;
+  }
+
+
+  /* PERIODONTITIS-PAGE */
+
+  .periodontitis__title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;   
+}
+
+.periodontitis__container{
+   margin-bottom: 100px;
+}
+
+.periodontitis__services-link{
+    color: #0095DA;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.periodontitis__link{
+    margin-bottom: 40px;
+}
+
+.periodontitis__stage-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;   
+    margin-top: 100px; 
+}
+
+.periodontitis__stage-descr{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+    margin-bottom: 56px;
+}
+
+.periodontitis__blocks {
+    display: flex;
+    width: 100%; /* Занимать всю доступную ширину */
+    flex-wrap: wrap;
+}
+
+.periodontitis__block-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 350px;
+    height: 241px;
+    margin-bottom: 26px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: #F4F4F4;
+  }
+
+.periodontitis-page{
+  margin-top: 48px;
+}
+
+.periodontitis__content{
+    display: flex;
+}
+
+.periodontitis__arrow{
+    margin-right: 5px;
+}
+
+.periodontitis__right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0 0 44px 62px;
+}
+
+.periodontitis__right-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929;
+    padding-bottom: 24px;
+}
+
+.periodontitis__right-item{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.periodontitis__tab-item{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.periodontitis__tab-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+}
+
+.periodontitis__block-item {
+    text-align: center;
+}
+
+.item-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 32px;
+}
+
+.item-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #0095DA;
+    margin-bottom: 19px;
+}
+
+.item-line {
+    width: 80%;
+    border-bottom: 1px solid #0095DA;
+    margin: 0 auto 24px auto;
+}
+
+.item-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+
+.periodontitis__contacts{
+    margin-top: 76px;
+}
+
+/*Стили для аккордеона в табах в блоке о периодонтите*/
+.accordion-content {
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+    
+}
+
+.tab-accordion{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+.accordion__list-item{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.accordion-toggle{
+  cursor: pointer;
+}
+
+.accordion-arrow {
+    margin-left: 16px;
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease-in-out;
+}
+  
+.tab-accordion.open .accordion-arrow {
+    transform: rotate(180deg);
+   
+}
+
+
+/*DELETE-TOOTH_PAGE*/
+
+.delete__title{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;   
+}
+
+.delete__content{
+    display: flex;
+}
+
+.delete__right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0 0 44px 62px;
+}
+
+.number-list{
+    list-style: none; /* Убираем стандартную нумерацию */
+}
+
+/* Стилизация элементов списка */
+.number-list li {
+    counter-increment: custom-counter; /* Увеличиваем счетчик */
+    position: relative;
+    padding-left: 20px; /* Добавляем отступ слева для текста */
+}
+  
+  /* Стилизация числа с скобкой */
+.number-list li::before {
+    content: counter(custom-counter) ") "; /* Добавляем счетчик с скобкой и пробелом */
+    position: absolute;
+    left: 0;
+}
+
+.delete__contacts{
+    margin-top: 76px;
+}
+
+.delete__tab-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em; 
+}
+
+
+
+/* CYSTECTOMY-PAGE */
+
+.cystectomy__right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding: 0 0 0 42px;
+}
+.cystectomy__contacts{
+    margin-top: 76px;
+}
+
+.cystectomy__list{
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.veneers-list-item{ /*КОСТЫЛЬ!*/
+    list-style-type: disc;
+    margin-left: 40px;
+    padding-left: 0 !important;
+}
+
+
+/*CROWNS-PAGE*/
+.crowns__descr{
+    margin-bottom: 24px;
+}
+
+.dotted-line{
+    padding-top: 5px;
+    border-bottom: 2px solid dotted;
+    color: #292929;
+}
+
+.removableDentures-right {
+    width: 50%;
+}
+
+.removableDentures-left {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.removableDentures-list {
+    list-style: auto;
+}
+
+
+
+/*IMPLANT*/
+.implant__item{
+    width: 28%;
+    margin-top: 48px;
+    margin-right: 54px;
+    height: auto;
+}
+
+/*остальные стили*/
+
+
+.removableDentures-right {
+    width: 50%;
+}
+
+.removableDentures-left {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.removableDentures-list {
+    list-style: auto;
+}
+
+.tab-accordion {
+    list-style: disc;
+}
+
+.tabs {
+    padding-bottom: 35px;
+}
+
+.accordion-content {
+    padding-top: 16px;
+}
+
+.removableDentures-container {
+    display: flex !important;
+    margin-bottom: 29px;
+    ;
+
+}
+
+.removableDentures-header {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.removableDentures-item {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.removableDentures-list-right {
+    width: 50%;
+}
+
+.removableDentures-list-left {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.proffCleaning-item{
+    width: 23%;
+    height: auto;
+}
+
+
+.proffCleaning-item .item-description {
+    padding-bottom: 32px;
+}
+
+.item-icon{
+    margin-top: 45px;
+    margin-bottom: 46px;
+}
+
+
+.proffCleaning-item .item-text{
+    height: 50px;
+}
+
+.proffCleaning-item
+.item-line{
+    margin-top: 0;
+}
+
+.proffCleaning__container-down{
+    margin-top: 100px;
+}
+
+.deepFluoridation-descr{
+    list-style: disc;
+}
+
+.deep__blocks{
+    justify-content: space-around;
+}
+
+.deep__item{
+    width: 24%;
+    height: auto;
+}
+
+.deep__item
+.item-text{
+    height: 23px;
+}
+
+.deep__item
+.item-line{
+    margin-top: 6%;
+}
+
+.deep__item
+.item-description {
+    padding-bottom: 32px;
+}
+
+.braces__descr-down{
+    margin-top: 24px;
+    margin-bottom: 26px;
+}
+
+.braces__item{
+    font-size: 20px;
+    font-weight: 400;
+    list-style: disc;
+}
+
+.braces__tab_descr-down{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contact__title{
+    margin-left: 140px;
+}
+
+.aliners__second-header{
+    margin-top: 24px;
+}
+
+.aliners__item-up{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.aliners__second-title{
+    margin-top: 84px;
+    margin-bottom: 16px;
+}
+
+.aliners__blocks{
+    justify-content: center;
+}
+
+.aliners__item{
+    width: 22%;
+    height: auto;
+    margin-right: 94px;
+}
+
+
+.aliners__item
+.item-text{
+    height: 23px;
+}
+
+.aliners__item
+.item-line{
+    margin-top: 6%;
+}
+
+.aliners__item
+.item-description {
+    padding-bottom: 32px;
+}
+
+
+.bridges__item
+.item-text{
+    height: 23px;
+}
+
+.bridges__item
+.item-line{
+    margin-top: 6%;
+}
+
+.bridges__item
+.item-description {
+    padding-bottom: 32px;
+}
+
+.implant__item{
+    width: 28%;
+    margin-top: 48px;
+    margin-right: 54px;
+    height: auto;
+}

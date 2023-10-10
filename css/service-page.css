@@ -1,0 +1,105 @@
+
+.accordion {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sercice__title{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 56px;
+}
+
+.services-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 0;
+}
+
+.services__item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.services-content {
+    display: none;
+    width: 100%; /* Занимать всю доступную ширину */
+    box-sizing: border-box;
+    padding: 10px 10px 10px 0;
+    flex-wrap: wrap;
+}
+
+.service__item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 260px !important;
+    height: 240px !important;
+    
+}
+
+.service-block__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B1B1B1;
+    padding-top: 25px;
+    padding-left: 16px;
+  
+}
+
+.services-item:not(.open) h2::after {
+    content: '';
+    width: 14px;
+    height: 8px;
+    background-image: url('../img/Arrow__questions.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-bottom: 44px;
+   
+}
+
+
+.services-item.open h2::after {
+    transform: rotate(180deg); /* Повернуть иконку при открытом аккордеоне */
+    content: '';
+    width: 14px;
+    height: 8px;
+    background-image: url('../img/Arrow__questions.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 44px;
+}
+
+.service-svg{
+    margin-bottom: 45px;
+}
+
+.service__item-text{
+    margin-left: 20px;
+}
+
+.services__link{
+    padding-top: 0;
+    padding-left: 0;
+  }
