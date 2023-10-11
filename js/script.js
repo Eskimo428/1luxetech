@@ -2,23 +2,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //БУРГЕР-МЕНЮ
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuList = document.querySelector('.mobile__menu-list'); // Выбираем .mobile__menu-list напрямую
+const burgerIcon = document.querySelector('.burger-icon');
+const closeIcon = document.querySelector('.close');
+const hero = document.querySelector('.hero')
+const mainContainer = document.querySelector('.main__conntainer')
 
-  const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const burgerIcon = document.querySelector('.burger-icon');
-  const closeIcon = document.querySelector('.close-icon');
+burger.addEventListener('click', function () {
+  mobileMenu.classList.toggle('open');
 
-  burger.addEventListener('click', function () {
-      mobileMenu.classList.toggle('open');
+  if (mobileMenu.classList.contains('open')) {
+    burgerIcon.style.display = 'none';
+    closeIcon.classList.add('hh');
+    mobileMenuList.classList.add('hh'); 
+    hero.classList.add('blackout')
+    mainContainer.classList.add('blackout')
+  } else {
+    burgerIcon.style.display = 'block';
+    closeIcon.classList.remove('hh');
+    mobileMenuList.classList.remove('hh'); 
+    hero.classList.remove('blackout')
+    mainContainer.classList.remove('blackout')
+  }
+});
 
-      if (mobileMenu.classList.contains('open')) {
-        burgerIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-    } else {
-        burgerIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-    }
-  });
+
 
 
 
