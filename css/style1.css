@@ -482,7 +482,7 @@ a {
 }
 
 .service__item:nth-child(3) {
-  margin-right: 0;
+  margin-right: 40px;
 }
 
 .service__item:nth-child(4) {
@@ -611,7 +611,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: left;
   text-align: left;
   padding: 62px 0 44px 62px;
 }
@@ -619,7 +618,6 @@ a {
 .about-page__right-text {
   font-family: 'Cera pro', sans-serif;
   font-size: 16px;
-  font-weight: light;
   line-height: 24px;
   letter-spacing: 0em;
   color: #292929;
@@ -636,7 +634,7 @@ a {
 
 .about-page__text-title {
   color: #0095DA;
-  font-family: 'Cera pro' sans-serif;
+  font-family: 'Cera pro', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
