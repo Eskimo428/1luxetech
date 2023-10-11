@@ -208,11 +208,11 @@ accordionItems.forEach(item => {
 ymaps.ready(init);
 function init() {
     let myMap = new ymaps.Map("map", {
-        center: [59.939095, 30.315868], // Координаты Санкт-Петербурга
+        center: [59.966399, 30.311511], // Координаты Санкт-Петербурга
         zoom: 15 // Масштаб карты
     });
 
-    let myPlacemark = new ymaps.Placemark([59.939095, 30.315868], {
+    let myPlacemark = new ymaps.Placemark([59.966399, 30.311511], {
         hintContent: "Ул. Большая Монетная, 19А"
     });
 
