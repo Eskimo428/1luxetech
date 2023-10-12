@@ -47,6 +47,7 @@ html {
 body {
   font-family: 'Cera pro', sans-serif;
   background: var(--white);
+  color: var(--dark);
 }
 
 * {

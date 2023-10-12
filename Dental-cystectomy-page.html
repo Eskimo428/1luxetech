@@ -1,262 +1,332 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRLuxe стоматологическая клиника</title>
-    
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dental-care-page.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRLuxe стоматологическая клиника</title>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/dental-care-page.css">
+  <link rel="stylesheet" href="css/style1.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
-    <div class="header__logo">
-      <img src="img/logo.svg" alt="Логотип">
-    </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
-        <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
-        <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
-        <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="Логотип">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
+          <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
+          <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
+          <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
+          <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <li class="header__nav-item header__location">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-city">Санкт-Петербург,</span><br>
+              <span class="header__nav-location">метро Петроградская</span>
+            </a>
+          </li>
+          <li class="header__nav-item header__phone">
+            <a href="tel:+78124158800" class="header__nav-link">
+              <strong>+7(812) 415-88-00</strong><br>
+              <span class="header__phone-label">Заказать звонок</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger" id="burger">
+
+        <svg class="burger-icon" width="20" height="14" viewbox="0 0 20 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        <li class="header__nav-item header__location">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-city">Санкт-Петербург,</span><br>
-            <span class="header__nav-location">метро Петроградская</span>
-          </a>
-        </li>
-        <li class="header__nav-item header__phone">
+        <svg class="close-icon" width="18" height="18" viewbox="0 0 18 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18 1.575L16.425 0L9 7.425L1.575 0L0 1.575L7.425 9L0 16.425L1.575 18L9 10.575L16.425 18L18 16.425L10.575 9L18 1.575Z"
+            fill="#2A2A2A" />
+        </svg>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu">
+
+        <ul class="header__nav-list">
+          <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <li class=" header__mobile-location">
+            <a href="#">
+              <span>Санкт-Петербург,</span>
+              <br>
+              <span>метро Петроградская</span>
+            </a>
+          </li>
+          <li class="header__burger-link"><a href="/index.html">Главная</a></li>
+          <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
+          <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
+          <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
+        </ul>
+        <div class="header__burger-phone">
           <a href="tel:+78124158800" class="header__nav-link">
             <strong>+7(812) 415-88-00</strong><br>
-            <span class="header__phone-label">Заказать звонок</span>
+            <span class="header__mobile-label">Заказать звонок</span>
           </a>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </div>
 
-  <div class="burger" id="burger">
-
-      <svg class="burger-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>  
-      <svg class="close-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 1.575L16.425 0L9 7.425L1.575 0L0 1.575L7.425 9L0 16.425L1.575 18L9 10.575L16.425 18L18 16.425L10.575 9L18 1.575Z" fill="#2A2A2A"/>
-      </svg>
-  </div>
-  
-  <div class="mobileMenu" id="mobileMenu">
-       
-    <ul class="header__nav-list">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <li class=" header__mobile-location">
-        <a href="#">
-          <span>Санкт-Петербург,</span>
-          <br>
-          <span>метро Петроградская</span>
-        </a>
-      </li>
-      <li class="header__burger-link"><a href="/index.html">Главная</a></li>
-      <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
-      <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
-      <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
-    </ul>
-    <div class="header__burger-phone">
-      <a href="tel:+78124158800" class="header__nav-link">
-        <strong>+7(812) 415-88-00</strong><br>
-        <span class="header__mobile-label">Заказать звонок</span>
-      </a>
-    </div>
-  </div>
-  
     </div>
   </header>
 
-      <section class="main">
-        <div class="container">
-          <div class="pulpitis__link">
-            <a href="/Services.html" class="pulpitis__services-link">
-              <svg class="pulpitis__arrow" width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928928C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292893 7.29289ZM56 7L1 7L1 9L56 9L56 7Z" fill="#0095DA"/>
-              </svg>
-              вернуться к услугам</a>
-          </div> 
-            <h1 class="pulpitis__title">ЦИСТЭКТОМИЯ КИСТЫ ЗУБОВ</h1>
-        
-          <div class="pulpitis__content">
-            <div class="left-block">
-              <img src="img/Cyestonic-page.png">
-            </div>
-            <div class="cystectomy__right">
-              <p class="text-Inter-20">
-                    Это хирургическая операция, в ходе которой удаляется киста, локализованная в области верхушки корня зуба. Эта процедура позволяет сохранить зуб пациента, 
-                    эффективно купировать воспалительный процесс и устранить болевые ощущения. 
-                    Киста представляет собой доброкачественное инкапсулированное образование, 
-                    заполненное жидким содержимым (часто гноем)</p>
-              <br>   
-              <p class="text-Inter-20">
-                    Она является осложнением пульпита и запущенного кариеса. Инфекция проникает в корневые каналы и провоцирует развитие данного образования. В некоторых случаях киста может стать результатом непрофессионального эндодонтического лечения. 
-                    Если корневые каналы не были запломбированы полностью, в них может развиваться инфекция, которая и становится причиной этого неприятного заболевания.</p>
-            </div>
-          </div>
-          <div class="tabs">
-            <div class="tab" data-tab="acute-indications">Показание</div>
-            <div class="tab" data-tab="acute-preparation">Подготовка</div>
-            <div class="tab" data-tab="acute-technique">Техника выполнения</div>
-            <div class="tab" data-tab="acute-advantages">Преимущества</div>
-            <div class="tab" data-tab="acute-disadvantages">Недостатки</div>
-            <div class="tab" data-tab="chronic-rehabilitation">Реабилитация</div>
-
-        </div>
-        <div class="tab-content text-Inter-20" id="acute-indications-content">
-            <p>Кистозное образование не всегда можно удалить с помощью цистэктомии. Операция слишком трудоемкая и сложная,
-                требующая высокого мастерства хирурга. Существуют прямые показания для ее проведения:</p>
-            <ul class="cystectomy__list text-decoration-disc">
-                <li class="cystectomy__list-item">Опухоль небольшая, но распространилась на несколько зубов;</li>
-                <li class="cystectomy__list-item">Киста появилась из-за нарушений в одонтогенном эпителии;</li>
-                <li class="cystectomy__list-item">Киста находится на месте удаленного зуба, при этом строение челюсти позволяет выполнить операцию  
-                    и есть достаточный объем костной ткани.</li>
-            </ul>
-        </div>
-
-        <div class="tab-content" id="acute-preparation-content">
-            <p class="text-Inter-20">Перед началом цистэктомии врач проводит обследование ротовой полости. 
-            Соседние зубы с кистой обследуются на электровозбудимость, и в случае отсутствия реакции проводится их лечение.</p>
-            <br>
-            <p class="text-Inter-20">Рентген дает информацию о расположении корней и их локализации относительно опухоли.</p>
-            <br>
-            <p class="text-Inter-20">Существует специфический для данной операции метод подготовки — депульпация зубов, 
-            чья корневая система находится в области кисты.</p>
-        </div>
-
-        <div class="tab-content text-Inter-20" id="acute-technique-content">
-           <p>Цистэктомия выполняется под общим наркозом, который не только обезболивает, но и обескровливает операционное поле. 
-            Далее выполняются следующие мероприятия: </p>
-            <ul class="cystectomy__list text-decoration-disc">
-                <li class="cystectomy__list-item">обнажение кости;</li>
-                <li class="cystectomy__list-item">получение доступа к кисте; </li>
-                <li class="cystectomy__list-item">удаление образования ( в случае обьединения с корнем выполняется его резекция);</li>
-                <li class="cystectomy__list-item">пломбировка;</li>
-                <li class="cystectomy__list-item">антибактериальная обработка костной полости;</li>
-                <li class="cystectomy__list-item">наложение швов.</li>
-            </ul>
-            <br>
-            <p>Для предотвращения появления гематомы на прооперированный участок накладывается давящая повязка, которая снимается через 5-7 дней.</p><br>
-            <p>В дальнейшем пациенту назначается лечение противовоспалительными, противоаллергическими и обезболивающими препаратами.</p><br>
-        </div>
-
-        <div class="tab-content text-Inter-20" id="acute-advantages-content">
-          <p>Несмотря на сложность проведения цистэктомия превосходит остальные методики за счет достоинств. Она позволяет сохранить зуб и предотвратить повторный рост опухоли. 
-          Также восстанавливается целостность и функциональность костной ткани.</p>
-        </div>
-
-        <div class="tab-content text-Inter-20" id="acute-disadvantages-content">
-            <p>Радикальные операции всегда сопровождаются риском осложнений, 
-              но если стоматолог обладает нужным уровнем опыта и профессионализма, 
-              то вероятность дальнейших проблем минимальна.
-            </p>
-        </div>
-          
-        <div class="tab-content text-Inter-20" id="chronic-rehabilitation-content">
-          <p>Срок восстановления мягких тканей — до 2 месяцев, костной ткани — 5-6 месяцев. 
-            Длительность зависит от особенностей организма и соблюдения врачебных рекомендаций:</p>
-            <ul class="cystectomy__list text-decoration-disc">
-                <li class="cystectomy__list-item">употреблять мягкую пищу комфортной температуры;</li>
-                <li class="cystectomy__list-item">не есть и не пить горячее, острое,соленое; </li>
-                <li class="cystectomy__list-item">отказаться от алкоголя и курения</li>
-                <li class="cystectomy__list-item">чистить зубы осторожно</li>
-                <li class="cystectomy__list-item">принимать все назначенные лекарства</li>
-                
-            </ul>
-            <br>
-            <p>Стоматологи считают цистэктомию наиболее эффективным и сохраняющим методом, который рекомендуется всем при отсутствии противопоказаний.</p>
-        </div>
-</div>
-
-      <div class="cystectomy__contacts">
-        <div class="container">
-          <h1 class="contact__title">КОНТАКТЫ</h1>
-        </div>
-         <div class="contact-container">
-          <div class="contact-container__left-block">
-              <div class="contact-form">
-                 <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
-                   с радостью ответим на них!</h3>
-                   <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
-                  <div class="contact-form__input-group">
-                      <label for="name" class="contact-form__label"></label>
-                      <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="contact-form__input" required >
-                  </div>
-                  <div class="contact-form__input-group">
-                      <label for="phone" class="contact-form__label"></label>
-                      <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" class="contact-form__input" required>
-                  </div>
-                  <div class="contact-form__checkbox-group">
-                    
-                      <input type="checkbox" id="agree" name="agree" class="contact-form__checkbox" required>
-                      <label for="agree" class="contact-form__checkbox-label">
-                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1.5 11L7.5 17L17 1.5" stroke="#0095DA" stroke-width="2"/>
-                        </svg>
-                    Даю согласие на обработку персональных данных</label>
-                  </div>
-                  <div class="contact-form__submit-button">
-                      <button type="submit" class="contact-form__button">Отправить</button>
-                  </div>
-              </div>
-          </div>
-          <div class="map" id="map"></div>
+  <div class="container">
+    <section class="main__sub main__caries">
+      <div class="sub__link-up">
+        <a href="/Services.html" class="pulpitis__services-link">
+          <svg class="sub__arrow-up" width="56" height="16" viewbox="0 0 56 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928928C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292893 7.29289ZM56 7L1 7L1 9L56 9L56 7Z"
+              fill="#0095DA" />
+          </svg>
+          Вернуться к услугам</a>
       </div>
+      <h2 class="sub__header">Устранение
+        пораженной области</h2>
+      <div class="sub__main__content">
+        <div class="sub__main-left">
+          <img src="https://1luxe.ru/wp-content/uploads/2023/09/Cyestonic-page.png" alt="цистектомия"
+            class="sub__main-img">
+        </div>
+        <div class="sub__main-right">
+          <p class="sub__text-li periodontitis__list-item">
+            Это хирургическая операция, в ходе которой удаляется киста,
+            локализованная в области верхушки корня зуба.
+            Эта процедура позволяет сохранить зуб пациента, эффективно
+            купировать воспалительный процесс и устранить болевые
+            ощущения. Киста представляет собой доброкачественное
+            инкапсулированное образование, заполненное жидким
+            содержимым (часто гноем)
+          </p>
+
+          <p class="sub__text-li periodontitis__list-item">
+            Она является осложнением пульпита и запущенного кариеса.
+            Инфекция проникает в корневые каналы и провоцирует
+            развитие данного образования. В некоторых случаях киста может
+            стать результатом непрофессионального эндодонтического лечения. Если корневые каналы не были запломбированы
+            полностью, в них может развиваться инфекция, которая
+            и становится причиной этого неприятного заболевания.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="indications">Показание</div>
+      <div class="tab" data-tab="preparation">Подготовка</div>
+      <div class="tab" data-tab="technique">Техника выполнения</div>
+      <div class="tab" data-tab="advantages">Преимущества</div>
+      <div class="tab" data-tab="disadvantages">Недостатки</div>
+      <div class="tab" data-tab="rehabilitation">Реабилитация</div>
     </div>
 
-            <div class="footer">
-              <div class="container">
-              <div class="footer__container">
-                <a href="#"><img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"></a>
-                <div class="footer__item">
-                    <h2 class="footer__title">Услуги</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item"><a href="/warning.html">Терапевтические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Хирургические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Имплантация зубов</a></li>
-                      <li class="footer__item"><a href="/warning.html">Ортопедические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Эстетические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Профилактика</a></li>
-                      <li class="footer__item"><a href="/warning.html">Ортодонтические услуги</a></li>
-                  </ul>
-              </div>
-              <div class="footer__item">
-                  <h2 class="footer__title">Контакты</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item">+7(812) 415-88-00</li>
-                      <li class="footer__item">info@1luxe.ru</li>
-                      <li class="footer__item"><a href="/warning.html">Политика конфиденциальности</a></li>
-                  </ul>
-              </div>
-              <div class="footer__item">
-                  <h2 class="footer__title">О Нас</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item">ООО "ЛЮКС"</li>
-                      <li class="footer__item">будни, временно:11:00 - 20:30</li>
-                      <li class="footer__item">сб: временно выходной</li>
-                      <li class="footer__item">вс: выходной</li>
-                  </ul>
-              </div>
+    <div class="tab-content" id="indications-content">
+      <p class="sub__text-li">
+        Кистозное образование не всегда можно удалить с помощью цистэктомии. Операция слишком трудоемкая
+        и сложная,требующая высокого мастерства хирурга. Существуют прямые показания для ее проведения:
+      </p>
+      <ul class="cystectomy__list">
+        <li class="sub__text-li cystectomy__item">
+          Опухоль небольшая, но распространилась на несколько зубов;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          Киста появилась из-за нарушений в одонтогенном эпителии;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          Киста находится на месте удаленного зуба, при этом строение челюсти позволяет выполнить операцию
+          и есть достаточный объем костной ткани.
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="preparation-content">
+      <p class="sub__text-li">
+        Перед началом цистэктомии врач проводит обследование ротовой полости. Соседние зубы с кистой обследуются
+        на электровозбудимость, и в случае отсутствия реакции проводится их лечение.
+      </p>
+      <p class="sub__text-li">
+        Рентген дает информацию о расположении корней и их локализации относительно опухоли.
+      </p>
+      <p class="sub__text-li">
+        Существует специфический для данной операции метод подготовки — депульпация зубов, чья корневая система
+        находится в области кисты.
+      </p>
+    </div>
+
+
+    <div class="tab-content" id="technique-content">
+      <p class="sub__text-li">
+        Цистэктомия выполняется под общим наркозом, который не только обезболивает, но и обескровливает
+        операционное поле. Далее выполняются следующие мероприятия:
+      </p>
+      <ul class="cystectomy__list">
+        <li class="sub__text-li cystectomy__item">
+          обнажение кости;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          получение доступа к кисте;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          удаление образования (в случае объединения с корнем выполняется его резекция);
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          пломбировка;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          антибактериальная обработка костной полости;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          наложение швов.
+        </li>
+      </ul>
+      <p class="sub__text-li">
+        Для предотвращения появления гематомы на прооперированный участок накладывается давящая повязка,
+        которая снимается через 5-7 дней.
+      </p>
+      <p class="sub__text-li">
+        В дальнейшем пациенту назначается лечение противовоспалительными, противоаллергическими
+        и обезболивающими препаратами.
+      </p>
+    </div>
+
+    <div class="tab-content" id="advantages-content">
+      <p class="sub__text-li">
+        Несмотря на сложность проведения цистэктомия превосходит остальные методики за счет достоинств. 
+        Она позволяет сохранить зуб и предотвратить повторный рост опухоли. Также восстанавливается целостность 
+        и функциональность костной ткани.
+      </p>
+    </div>
+    <div class="tab-content" id="disadvantages-content">
+      <p class="sub__text-li">
+        Радикальные операции всегда сопровождаются риском осложнений, но если стоматолог обладает нужным уровнем опыта и
+        профессионализма, то вероятность дальнейших проблем минимальна.
+      </p>
+    </div>
+
+
+    <div class="tab-content" id="rehabilitation-content">
+      <p class="sub__text-li">
+        Срок восстановления мягких тканей — до 2 месяцев, костной ткани — 5-6 месяцев. Длительность зависит
+        от особенностей организма и соблюдения врачебных рекомендаций:
+      </p>
+      <ul class="cystectomy__list">
+        <li class="sub__text-li cystectomy__item">
+          употреблять мягкую пищу комфортной температуры;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          не есть и не пить горячее, острое, соленое;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          отказаться от алкоголя и курения;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          чистить зубы осторожно;
+        </li>
+        <li class="sub__text-li cystectomy__item">
+          принимать все назначенные лекарства.
+        </li>
+      </ul>
+      <p class="sub__text-li">
+        Стоматологи считают цистэктомию наиболее эффективным и сохраняющим методом, который рекомендуется
+        всем при отсутствии противопоказаний.
+      </p>
+    </div>
+
+  </div>
+
+  <section class="contacts">
+    <h2 class="contact__title header__main">Контакты</h2>
+
+    <div class="contact-container">
+      <div class="contact-container__left-block">
+        <div class="contact-form">
+          <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
+            с радостью ответим на них!</h3>
+          <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
+          <form action="#" class="contact-form__input-group" method="post" id="feedback-form-1"
+            enctype="multipart/form-data">
+            <input type="text" name="name" class="contact-form__input" placeholder="Имя" minlength="3" required
+              pattern="^[А-Яа-яЁёA-Za-z]+$" title="Пожалуйста, введите правильное имя">
+            <input type="tel" name="phone" class="contact-form__input" placeholder="+7(___) ___-__-__" minlength="11"
+              maxlength="30" required>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required
+                title="Пожалуйста, отметьте это поле" />
+              <label class="contact-form__checkbox-label" for="checkbox">Даю согласие на обработку персональных
+                данных</label>
             </div>
-          </div>
-          </div>
-  
-      </section>
-      <script defer src="js/script.js"></script>
+            <button type="submit" class="btn contact-form__button" name="submit"
+              id="submit-feedback-1">Отправить</button>
+            <div class="delivered-1"></div>
+          </form>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <a href="#"><img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"></a>
+        <div class="footer__item">
+          <h2 class="footer__title">Услуги</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/warning.html">Терапевтические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Хирургические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Имплантация зубов</a></li>
+            <li class="footer__item"><a href="/warning.html">Ортопедические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Эстетические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Профилактика</a></li>
+            <li class="footer__item"><a href="/warning.html">Ортодонтические услуги</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h2 class="footer__title">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__item">+7(812) 415-88-00</li>
+            <li class="footer__item">info@1luxe.ru</li>
+            <li class="footer__item"><a href="/warning.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h2 class="footer__title">О Нас</h2>
+          <ul class="footer__list">
+            <li class="footer__item">ООО "ЛЮКС"</li>
+            <li class="footer__item">будни, временно:11:00 - 20:30</li>
+            <li class="footer__item">сб: временно выходной</li>
+            <li class="footer__item">вс: выходной</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <script defer src="js/script.js"></script>
 </body>
+
 </html>
