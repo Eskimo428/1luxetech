@@ -1,269 +1,347 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRLuxe стоматологическая клиника</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/dental-care-page.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRLuxe стоматологическая клиника</title>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/dental-care-page.css">
+  <link rel="stylesheet" href="css/style1.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
-    <div class="header__logo">
-      <img src="img/logo.svg" alt="Логотип">
-    </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
-        <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
-        <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
-        <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="Логотип">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
+          <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
+          <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
+          <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
+          <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <li class="header__nav-item header__location">
+            <a href="#" class="header__nav-link">
+              <span class="header__nav-city">Санкт-Петербург,</span><br>
+              <span class="header__nav-location">метро Петроградская</span>
+            </a>
+          </li>
+          <li class="header__nav-item header__phone">
+            <a href="tel:+78124158800" class="header__nav-link">
+              <strong>+7(812) 415-88-00</strong><br>
+              <span class="header__phone-label">Заказать звонок</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger" id="burger">
+        <svg class="burger-icon" width="20" height="14" viewbox="0 0 20 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        <li class="header__nav-item header__location">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-city">Санкт-Петербург,</span><br>
-            <span class="header__nav-location">метро Петроградская</span>
-          </a>
-        </li>
-        <li class="header__nav-item header__phone">
+        <svg class="close-icon" width="18" height="18" viewbox="0 0 18 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M18 1.575L16.425 0L9 7.425L1.575 0L0 1.575L7.425 9L0 16.425L1.575 18L9 10.575L16.425 18L18 16.425L10.575 9L18 1.575Z"
+            fill="#2A2A2A" />
+        </svg>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu">
+        <ul class="header__nav-list">
+          <svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <li class=" header__mobile-location">
+            <a href="#">
+              <span>Санкт-Петербург,</span>
+              <br>
+              <span>метро Петроградская</span>
+            </a>
+          </li>
+          <li class="header__burger-link"><a href="/index.html">Главная</a></li>
+          <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
+          <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
+          <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
+        </ul>
+        <div class="header__burger-phone">
           <a href="tel:+78124158800" class="header__nav-link">
             <strong>+7(812) 415-88-00</strong><br>
-            <span class="header__phone-label">Заказать звонок</span>
+            <span class="header__mobile-label">Заказать звонок</span>
           </a>
-        </li>
-      </ul>
-    </nav>
-
-  <div class="burger" id="burger">
-      <svg class="burger-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>  
-      <svg class="close-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 1.575L16.425 0L9 7.425L1.575 0L0 1.575L7.425 9L0 16.425L1.575 18L9 10.575L16.425 18L18 16.425L10.575 9L18 1.575Z" fill="#2A2A2A"/>
-      </svg>
-  </div>
-  
-  <div class="mobileMenu" id="mobileMenu">
-    <ul class="header__nav-list">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <li class=" header__mobile-location">
-        <a href="#">
-          <span>Санкт-Петербург,</span>
-          <br>
-          <span>метро Петроградская</span>
-        </a>
-      </li>
-      <li class="header__burger-link"><a href="/index.html">Главная</a></li>
-      <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
-      <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
-      <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
-    </ul>
-    <div class="header__burger-phone">
-      <a href="tel:+78124158800" class="header__nav-link">
-        <strong>+7(812) 415-88-00</strong><br>
-        <span class="header__mobile-label">Заказать звонок</span>
-      </a>
-    </div>
-  </div>
+        </div>
+      </div>
     </div>
   </header>
 
-      <section class="main">
-        <div class="container">
-          <div class="pulpitis__link">
-            <a href="/Services.html" class="pulpitis__services-link">
-              <svg class="pulpitis__arrow" width="56" height="16" viewBox="0 0 56 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928928C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292893 7.29289ZM56 7L1 7L1 9L56 9L56 7Z" fill="#0095DA"/>
-              </svg>
-              вернуться к услугам</a>
-          </div> 
-            <h1 class="pulpitis__title">Синус-лифтинг</h1>
-        
-          <div class="pulpitis__content">
-            <div class="left-block">
-              <img src="img/Sinus-lifting.jpg">
-            </div>
-            <div class="cystectomy__right">
-              <p class="text-inter -20">
-                Современные технологии, позволяющие нарастить кость на верхней челюсти для последующей надежной фиксации импланта.
-              </p>
-              <br>   
-              <p class="text-Inter-20">
-                Операция по наращиванию костной ткани на верхней челюсти, 
-                когда ее не хватает для установки имплантов. Метод появился в стоматологии недавно, но уже показал впечатляющие результаты. 
-                Большинство пациентов хорошо переносит оперативное вмешательство, 
-                и через несколько месяцев можно вживлять титановые стержни, на которые устанавливают коронки.</p>
-            </div>
-          </div>
-        <div class="tabs">
-            <div class="tab" data-tab="acute-indications">Показание</div>
-            <div class="tab" data-tab="acute-preparation">Противопоказания</div>
-            <div class="tab" data-tab="acute-technique">Виды</div>
-            <div class="tab" data-tab="acute-advantages">Осложнение</div>
-            <div class="tab" data-tab="acute-disadvantages">Операция</div>
-            <div class="tab" data-tab="chronic-rehabilitation">Сроки</div>
-        </div> 
 
-        <div class="tab-content text-Inter-20" id="acute-indications-content">
-            <p>Кистозное образование не всегда можно удалить с помощью цистэктомии. Операция слишком трудоемкая и сложная,
-                требующая высокого мастерства хирурга. Существуют прямые показания для ее проведения:</p>
-            <ul class="cystectomy__list text-decoration-disc">
-                <li class="cystectomy__list-item">Опухоль небольшая, но распространилась на несколько зубов;</li>
-                <li class="cystectomy__list-item">Киста появилась из-за нарушений в одонтогенном эпителии;</li>
-                <li class="cystectomy__list-item">Киста находится на месте удаленного зуба, при этом строение челюсти позволяет выполнить операцию  
-                    и есть достаточный объем костной ткани.</li>
-            </ul>
+  <div class="container">
+    <section class="main__sub main__caries">
+      <div class="sub__link-up">
+        <a href="/Services.html" class="pulpitis__services-link">
+          <svg class="sub__arrow-up" width="56" height="16" viewbox="0 0 56 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6568L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928928C7.68054 0.538404 7.04738 0.538404 6.65685 0.928928L0.292893 7.29289ZM56 7L1 7L1 9L56 9L56 7Z"
+              fill="#0095DA" />
+          </svg>
+          Вернуться к услугам</a>
+      </div>
+      <h2 class="sub__header">Синус-лифтинг</h2>
+      <div class="sub__main__content">
+        <div class="sub__main-left">
+          <img src="https://1luxe.ru/wp-content/uploads/2023/09/Sinus-lifting.jpg" alt="sinus" class="sub__main-img">
         </div>
-
-        <div class="tab-content text-Inter-20" id="acute-preparation-content">
-          <ul class="cystectomy__list text-decoration-disc">
-            <li class="cystectomy__list-item">Гайморит (верхнечелюстной синусит) в стадии обострения.</li>
-            <li class="cystectomy__list-item">Период реабилитации после операций на Гайморовой пазухе или носовой полости. </li>
-            <li class="cystectomy__list-item">Опухолевый процесс в близлежащих тканях.</li>
-            <li class="cystectomy__list-item">Прохождение лучевой или химиотерапии при опухолях, независимо от их локализации</li>
-            <li class="cystectomy__list-item">Аутоиммунные болезни — ревматизм, ревматический артрит, гломерулонефрит и другие.</li>
-            <li class="cystectomy__list-item">Курение табака, с потреблением более двух пачек сигарет ежедневно.</li>
-        </ul><br>
-         <p>Кистозное образование не всегда можно удалить с помощью цистэктомии. Операция слишком трудоемкая и сложная,
-            требующая высокого мастерства хирурга. Существуют прямые показания для ее проведения:</p>
-        </div>
-
-        <div class="tab-content text-Inter-20" id="acute-technique-content">
-           <p>Синус-лифтинг, или субантральная аугментация, бывает двух видов — вертикальный и латеральный. 
-            Вертикальный (транскрестальный, также малый или закрытый), проводят через лунку импланта, используя остеоконденсоры. Это редкая костнопластическая операция, необходимая лишь немногим пациентам. Как правило, под синус-лифтингом имеютв виду латеральный (открытый или большой), 
-            в нем нуждается почти половина обратившихся к врачу по поводу имплантации. 
-            Латеральный синус-лифтинг выполняют с боковым доступом в верхнечелючтные воздушные пазухи.
+        <div class="sub__main-right">
+          <p class="sub__text-li sinus__list-item">Современные технологии, позволяющие нарастить кость
+            на верхней челюсти для последующей надежной фиксации
+            импланта.
+          </p>
+          <p class="sub__text-li sinus__list-item">Операция по наращиванию костной ткани на верхней челюсти,
+            когда ее не хватает для установки имплантов. Метод появился
+            в стоматологии недавно, но уже показал впечатляющие результаты.
+            Большинство пациентов хорошо переносит оперативное
+            вмешательство, и через несколько месяцев можно вживлять
+            титановые стержни, на которые устанавливают коронки.
           </p>
         </div>
-
-        <div class="tab-content text-Inter-20" id="acute-advantages-content">
-          <ul class="cystectomy__list text-decoration-disc">
-            <li class="cystectomy__list-item">Перфорация (сквозное повреждение) слизистой оболочки верхнечелюстного синуса.</li>
-            <li class="cystectomy__list-item">Неэффективность операции. </li>
-            <li class="cystectomy__list-item">Обострение хронического гайморита</li>
-        </ul><br>
-          <p>Слизистая оболочка Гайморовой пазухи довольно тонкая. Учитывая сложность доступа и ограниченный обзор операционного поля, ее легко повредить неумелыми действиями или некачественными инструментами. 
-            Даже заслуженные хирурги иногда совершают такую оплошность.</p><br>
-          <p>К осложнениям относится и неэффективность синуслифтинга. Костная ткань может не регенерировать, внесенный аутокостный материал в таком случае бесследно рассасывается. Поэтому рекомендуется всегда дополнять костную стружку современными трансплантатами. 
-            При неэффективной остеопластике синус-лифтинг повторяют, действуя аккуратнее, и применяют другие пластические материалы.</p><br>
-          <p>Обострившийся гайморит лечат, как любой воспалительный процесс. Учитывая периодичность обострений, 
-            пациенты уже знают, какие лекарства следует принимать.</p><br>
-          <p class="text-Inter-20-300">Важно: серьезное кровотечение или невыносимая боль (нельзя спать ночью) — повод немедленно обратиться 
-            к врачу. Если это не стоматолог-хирург, проводивший операцию, необходимо четко описать сложившуюся ситуацию.</p>
-
-        </div>
-
-        <div class="tab-content text-Inter-20" id="acute-disadvantages-content">
-            <p>Латеральный синус-лифтинг проводят под местной анестезией. Это огромный плюс для здоровья пациента, поскольку общая отрицательно влияет на жизненно важные органы, в особенности мозг.
-            </p><br>
-            <p>Когда обезболивание подействует, приступают к самому ответственному этапу операции — создают боковой (латеральный по-латински) доступ к верхнечелюстной пазухе. Кость просверливают фрезой, реже разрушают ультразвуком или скребком.
-            </p><br>
-            <p>Над местом, где будут установлены импланты, проделывают в кости небольшое окошко, не затрагивая слизистую 
-              оболочку с другой стороны, выстилающую Гайморову пазуху. Оперировать должен опытный стоматолог-хирург, 
-              прекрасно знающий анатомию. Используют тщательно подобранные инструменты высшего качества, 
-              чтобы не нанести случайных повреждений.
-            </p><br>
-            <p>Окошко в верхней челюсти, служившее для доступа к пазухе, закрывают. Если оно совсем маленькое, рана не требует дополнительного вмешательства. Отверстия побольше заполняют рассасывающейся барьерной мембраной, например Bioguide или Jason. Самые крупные окошки прикрывают нерассасывающимся материалом — титановой пластиной или Gore-Tex. Но остающееся на челюсти покрытие потом необходимо снимать.
-            </p><br>
-            <p>Операционную рану зашивают. Швы снимают в положенные сроки, обычно после операции не бывает серьезных осложнений. Небольшие неудобства приносит обычный для послеоперационного периода отек щеки. Реже присоединяется носовое кровотечение. Отмечается легкая болезненность при прикосновениях к верхней челюсти.
-            </p><br>
-            <p class="text-Inter-20-300">Пациенту дают рекомендации относительно питания и оценки своего состояния в последующие дни. Важно правильно ориентировать человека, чтобы он обратился к доктору, когда это необходимо.
-            </p>
-        </div>
-          
-        <div class="tab-content text-Inter-20" id="chronic-rehabilitation-content">
-          <p>Пациентам, желающим скорее обзавестись искусственными зубами, приятно будет узнать, что иногда во время синус-лифтинга можно сразу установить импланты. 
-            Критерием является толщина кости альвеолярного отростка. Если она достигает 5 мм, хотя бы наполовину закрывая металлический стержень, его устанавливают. В противном случае выполняют две отдельные операции, 
-            с разницей по времени в несколько месяцев. Ожидают, пока нарастет достаточный объем костной ткани.</p><br>
-          <p>Пригодность кости для имплантирования оценивают отдельно справа и слева. Встречаются пациенты, у которых с одной стороны можно ставить имплант при синус-лифтинге, 
-            с другой — лучше подождать. Необходимость в лифтинге оценивают локально. Если над шестым зубом кость сравнительно толстая, а над седьмым истончена, пациента оперируют только над седьмым. 
-            В принципе, чем скорее будут установлены импланты, тем лучше, поскольку на их приживление требуется существенное время.</p>
-        </div>
       </div>
-        <div class="cystectomy__contacts">
-            <div class="container">
-              <h1 class="contact__title">КОНТАКТЫ</h1>
-            </div>
-         <div class="contact-container">
-          <div class="contact-container__left-block">
-              <div class="contact-form">
-                 <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
-                   с радостью ответим на них!</h3>
-                   <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
-                  <div class="contact-form__input-group">
-                      <label for="name" class="contact-form__label"></label>
-                      <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="contact-form__input" required >
-                  </div>
-                  <div class="contact-form__input-group">
-                      <label for="phone" class="contact-form__label"></label>
-                      <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" class="contact-form__input" required>
-                  </div>
-                  <div class="contact-form__checkbox-group">
-                    
-                      <input type="checkbox" id="agree" name="agree" class="contact-form__checkbox" required>
-                      <label for="agree" class="contact-form__checkbox-label">
-                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1.5 11L7.5 17L17 1.5" stroke="#0095DA" stroke-width="2"/>
-                        </svg>
-                    Даю согласие на обработку персональных данных</label>
-                  </div>
-                  <div class="contact-form__submit-button">
-                      <button type="submit" class="contact-form__button">Отправить</button>
-                  </div>
-              </div>
-          </div>
-          <div class="map" id="map"></div>
-      </div>
+    </section>
+
+    <div class="tabs">
+      <div class="tab" data-tab="sinus-indications">Показание</div>
+      <div class="tab" data-tab="sinus-contraindications">Противопоказания</div>
+      <div class="tab" data-tab="kinds">Виды</div>
+      <div class="tab" data-tab="sinus-complications">Осложнение</div>
+      <div class="tab" data-tab="sinus-operation">Операция</div>
+      <div class="tab" data-tab="sinus-deadlines">Сроки</div>
     </div>
 
-            <div class="footer">
-              <div class="container">
-              <div class="footer__container">
-                <a href="#"><img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"></a>
-                <div class="footer__item">
-                    <h2 class="footer__title">Услуги</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item"><a href="/warning.html">Терапевтические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Хирургические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Имплантация зубов</a></li>
-                      <li class="footer__item"><a href="/warning.html">Ортопедические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Эстетические услуги</a></li>
-                      <li class="footer__item"><a href="/warning.html">Профилактика</a></li>
-                      <li class="footer__item"><a href="/warning.html">Ортодонтические услуги</a></li>
-                  </ul>
-              </div>
-              <div class="footer__item">
-                  <h2 class="footer__title">Контакты</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item">+7(812) 415-88-00</li>
-                      <li class="footer__item">info@1luxe.ru</li>
-                      <li class="footer__item"><a href="/warning.html">Политика конфиденциальности</a></li>
-                  </ul>
-              </div>
-              <div class="footer__item">
-                  <h2 class="footer__title">О Нас</h2>
-                  <ul class="footer__list">
-                      <li class="footer__item">ООО "ЛЮКС"</li>
-                      <li class="footer__item">будни, временно:11:00 - 20:30</li>
-                      <li class="footer__item">сб: временно выходной</li>
-                      <li class="footer__item">вс: выходной</li>
-                  </ul>
-              </div>
+    <div class="tab-content" id="sinus-indications-content">
+      <p class="sub__text-li">
+        Современные люди привыкли, что при отсутствии естественных зубных корней стоматологи вживляют импланты,
+        и на них появляются красивые фарфоровые коронки. Но у некоторых пациентов сразу провести такую операцию
+        невозможно. На альвеолярном отростке верхней челюсти, где находятся зубы, для этого недостаточно костной ткани.
+        Пригодный для вживления штифта участок расположен слишком высоко или кость разреженная, металлический стержень
+        не будет в ней крепко держаться.
+      </p>
+      <p class="sub__text-li">
+        Раньше стоматологи-хирурги отказывали таким пациентам в красивой улыбке и праве комфортно жевать.
+        При сохранившихся соседних зубах иногда выручали мосты, а при почти полном их отсутствии на челюсти — съемные
+        протезы. Теперь эта прискорбная ситуация полностью изменилась. Импланты ставят практически в любых условиях,
+        хотя на создание «почвы» для зубов понадобится время и терпение.
+      </p>
+    </div>
+
+
+    <div class="tab-content" id="sinus-contraindications-content">
+      <ul class="sinus__list">
+        <li class="sub__text-li sinus__item">
+          Гайморит (верхнечелюстной синусит) в стадии обострения.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Период реабилитации после операций на Гайморовой пазухе или носовой полости.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Опухолевый процесс в близлежащих тканях.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Прохождение лучевой или химиотерапии при опухолях, независимо от их локализации.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Аутоиммунные болезни — ревматизм, ревматический артрит, гломерулонефрит и другие.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Курение табака, с потреблением более двух пачек сигарет ежедневно.
+        </li>
+      </ul>
+      <p class="sub__text-li sinus-text-down">
+        Важно: любое значительное ослабление защитных сил организма и способности к регенерации — противопоказание
+        к хирургическим операциям.
+      </p>
+    </div>
+
+
+    <div class="tab-content" id="kinds-content">
+      <p class="sub__text-li">
+        Синус-лифтинг, или субантральная аугментация, бывает двух видов — вертикальный и латеральный.
+        Вертикальный (транскрестальный, также малый или закрытый), проводят через лунку импланта, используя
+        остеоконденсоры. Это редкая костнопластическая операция, необходимая лишь немногим пациентам.
+        Как правило, под синус-лифтингом имеютв виду латеральный (открытый или большой), в нем нуждается
+        почти половина обратившихся к врачу по поводу имплантации. Латеральный синус-лифтинг выполняют
+        с боковым доступом в верхнечелючтные воздушные пазухи.
+      </p>
+    </div>
+
+
+    <div class="tab-content" id="sinus-complications-content">
+      <ul class="sinus__list">
+        <li class="sub__text-li sinus__item">
+          Перфорация (сквозное повреждение) слизистой оболочки верхнечелюстного синуса.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Неэффективность операции.
+        </li>
+        <li class="sub__text-li sinus__item">
+          Обострение хронического гайморита.
+        </li>
+      </ul>
+      <p class="sub__text-li sinus-text-down">
+        Слизистая оболочка Гайморовой пазухи довольно тонкая. Учитывая сложность доступа и ограниченный обзор
+        операционного поля, ее легко повредить неумелыми действиями или некачественными инструментами.
+        Даже заслуженные хирурги иногда совершают такую оплошность.
+      </p>
+      <p class="sub__text-li sinus-text-down">
+        К осложнениям относится и неэффективность синуслифтинга. Костная ткань может не регенерировать, внесенный
+        аутокостный материал в таком случае бесследно рассасывается. Поэтому рекомендуется всегда дополнять
+        костную стружку современными трансплантатами. При неэффективной остеопластике синус-лифтинг повторяют,
+        действуя аккуратнее, и применяют другие пластические материалы.
+      </p>
+      <p class="sub__text-li sinus-text-down">
+        Обострившийся гайморит лечат, как любой воспалительный процесс. Учитывая периодичность обострений,
+        пациенты уже знают, какие лекарства следует принимать.
+      </p>
+      <p class="sub__text-li sinus-text-down">
+        Важно: серьезное кровотечение или невыносимая боль (нельзя спать ночью) — повод немедленно обратиться
+        к врачу. Если это не стоматолог-хирург, проводивший операцию, необходимо четко описать сложившуюся ситуацию.
+      </p>
+    </div>
+
+    <div class="tab-content" id="sinus-operation-content">
+      <p class="sub__text-li">
+        Латеральный синус-лифтинг проводят под местной анестезией. Это огромный плюс для здоровья пациента,
+        поскольку общая отрицательно влияет на жизненно важные органы, в особенности мозг.
+      </p>
+      <p class="sub__text-li">
+        Когда обезболивание подействует, приступают к самому ответственному этапу операции — создают боковой
+        (латеральный по-латински) доступ к верхнечелюстной пазухе. Кость просверливают фрезой, реже разрушают
+        ультразвуком или скребком.
+      </p>
+      <p class="sub__text-li">
+        Над местом, где будут установлены импланты, проделывают в кости небольшое окошко, не затрагивая слизистую
+        оболочку с другой стороны, выстилающую Гайморову пазуху. Оперировать должен опытный стоматолог-хирург,
+        прекрасно знающий анатомию. Используют тщательно подобранные инструменты высшего качества,
+        чтобы не нанести случайных повреждений.
+      </p>
+      <p class="sub__text-li">
+        Окошко в верхней челюсти, служившее для доступа к пазухе, закрывают. Если оно совсем маленькое, рана не требует
+        дополнительного вмешательства. Отверстия побольше заполняют рассасывающейся барьерной мембраной, например
+        Bioguide или Jason. Самые крупные окошки прикрывают нерассасывающимся материалом — титановой пластиной или
+        Gore-Tex. Но остающееся на челюсти покрытие потом необходимо снимать.
+      </p>
+      <p class="sub__text-li">
+        Операционную рану зашивают. Швы снимают в положенные сроки, обычно после операции не бывает серьезных
+        осложнений. Небольшие неудобства приносит обычный для послеоперационного периода отек щеки.
+        Реже присоединяется носовое кровотечение. Отмечается легкая болезненность при прикосновениях к верхней
+        челюсти.
+      </p>
+      <p class="sub__text-li">
+        Пациенту дают рекомендации относительно питания и оценки своего состояния в последующие дни.
+        Важно правильно ориентировать человека, чтобы он обратился к доктору, когда это необходимо.
+      </p>
+    </div>
+
+    <div class="tab-content" id="sinus-deadlines-content">
+      <p class="sub__text-li">
+        Пациенту дают рекомендации относительно питания и оценки своего состояния в последующие дни.
+        Важно правильно ориентировать человека, чтобы он обратился к доктору, когда это необходимо.
+      </p>
+      <p class="sub__text-li">
+        Пригодность кости для имплантирования оценивают отдельно справа и слева. Встречаются пациенты, у которых
+        с одной стороны можно ставить имплант при синус-лифтинге, с другой — лучше подождать. Необходимость
+        в лифтинге оценивают локально. Если над шестым зубом кость сравнительно толстая, а над седьмым истончена,
+        пациента оперируют только над седьмым. В принципе, чем скорее будут установлены импланты, тем лучше, поскольку
+        на их приживление требуется существенное время.
+      </p>
+
+    </div>
+  </div>
+
+
+  <section class="contacts">
+    <div class="container">
+      <h2 class="contact__title header__main">Контакты</h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-container__left-block">
+        <div class="contact-form">
+          <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
+            с радостью ответим на них!</h3>
+          <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
+          <form action="#" class="contact-form__input-group" method="post" id="feedback-form-1"
+            enctype="multipart/form-data">
+            <input type="text" name="name" class="contact-form__input" placeholder="Имя" minlength="3" required
+              pattern="^[А-Яа-яЁёA-Za-z]+$" title="Пожалуйста, введите правильное имя">
+            <input type="tel" name="phone" class="contact-form__input" placeholder="+7(___) ___-__-__" minlength="11"
+              maxlength="30" required>
+            <div class="checkbox__container">
+              <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required
+                title="Пожалуйста, отметьте это поле" />
+              <label class="contact-form__checkbox-label" for="checkbox">Даю согласие на обработку персональных
+                данных</label>
             </div>
-          </div>
-          </div>
-  
-      </section>
-      <script defer src="js/script.js"></script>
+            <button type="submit" class="btn contact-form__button" name="submit"
+              id="submit-feedback-1">Отправить</button>
+            <div class="delivered-1"></div>
+          </form>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <a href="#"><img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"></a>
+        <div class="footer__item">
+          <h2 class="footer__title">Услуги</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="/warning.html">Терапевтические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Хирургические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Имплантация зубов</a></li>
+            <li class="footer__item"><a href="/warning.html">Ортопедические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Эстетические услуги</a></li>
+            <li class="footer__item"><a href="/warning.html">Профилактика</a></li>
+            <li class="footer__item"><a href="/warning.html">Ортодонтические услуги</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h2 class="footer__title">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__item">+7(812) 415-88-00</li>
+            <li class="footer__item">info@1luxe.ru</li>
+            <li class="footer__item"><a href="/warning.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h2 class="footer__title">О Нас</h2>
+          <ul class="footer__list">
+            <li class="footer__item">ООО "ЛЮКС"</li>
+            <li class="footer__item">будни, временно:11:00 - 20:30</li>
+            <li class="footer__item">сб: временно выходной</li>
+            <li class="footer__item">вс: выходной</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="js/script.js"></script>
 </body>
+
 </html>

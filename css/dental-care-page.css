@@ -56,10 +56,15 @@ body {
     margin-top: 56px;
 }
 
+.sub__main-left {
+    width: 40%;
+}
+
 .sub__main-img {
     object-fit: cover;
     width: 100%;
     height: 95%;
+    border-radius: 10px;
 }
 
 .sub__main-right {
@@ -213,7 +218,6 @@ body {
 }
 
 .tab-content.active {
-    display: block;
     opacity: 1;
     visibility: visible;
     transition: all ease-in-out .5s;
@@ -262,14 +266,13 @@ body {
     transition: all ease-in .2s;
 }
 
-.accordion-content.active{
+.accordion-content.active {
     opacity: 1;
     height: auto;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    margin-top: 10px;
     transition: all ease-in .2s;
 }
 
@@ -306,16 +309,16 @@ body {
 
 /*DELETE-TOOTH_PAGE*/
 
-.sub__main-right .delete__list-item:nth-child(1){
+.sub__main-right .delete__list-item:nth-child(1) {
     margin-top: 0;
 }
 
-.delete-text-down{
+.delete-text-down {
     margin-top: 16px;
 }
 
-.delete-text-down-list li{
-    list-style:decimal;
+.delete-text-down-list li {
+    list-style: decimal;
     margin-left: 20px;
 }
 
@@ -323,72 +326,333 @@ body {
 
 /* CYSTECTOMY-PAGE */
 
-.cystectomy__item{
+.cystectomy__item {
     list-style: disc;
     margin-left: 20px;
 }
 
-#preparation-content p:not(:first-child){
-    margin-top: 24px;
-}
-#technique-content p:not(:first-child){
+#preparation-content p:not(:first-child) {
     margin-top: 24px;
 }
 
-#rehabilitation-content p:last-child{
+#technique-content p:not(:first-child) {
     margin-top: 24px;
+}
+
+#rehabilitation-content p:last-child {
+    margin-top: 24px;
+}
+
+
+
+/*SINUS*/
+
+#sinus-indications-content .sub__text-li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.sinus__list li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.sinus-text-down {
+    margin-top: 24px;
+}
+
+#sinus-operation-content .sub__text-li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+#sinus-deadlines-content .sub__text-li:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 
 /*CROWNS-PAGE*/
-.crowns__descr {
-    margin-bottom: 24px;
+.crowns__content p:first-child {
+    margin-top: 32px;
 }
 
-.dotted-line {
-    padding-top: 5px;
-    border-bottom: 2px solid dotted;
-    color: #292929;
+.sub__crowns__content {
+    margin-top: 24px;
 }
 
-.removableDentures-right {
-    width: 50%;
+/*VEENEARS*/
+
+
+/*BRIDGES*/
+
+.pulpitis__tab-text .bridges__tab-item {
+    list-style: disc;
+    margin-left: 20px;
 }
 
-.removableDentures-left {
+.bridges__list {
+    row-gap: 56px;
+}
+
+.bridges__list li {
+    width: 24%;
+}
+
+.bridges__list li h5 {
+    min-height: 30%;
+}
+
+
+/*REMOVABLE*/
+
+.removable__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.removableDentures-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.removable__left {
     width: 50%;
     margin-right: 40px;
 }
 
-.removableDentures-list {
-    list-style: auto;
+.removable__subtitle {
+    text-align: center;
 }
 
+
+.removable__right {
+    width: 50%;
+}
+
+.removable-list {
+    margin-top: 32px;
+}
+
+.removable__left .removable-list {
+    margin-left: 20px;
+}
+
+.removableDentures-list li {
+    list-style-type: decimal;
+}
+
+.removable__stage-list li {
+    width: 30%;
+}
+
+.removable__stage-list li h5 {
+    min-height: 25%;
+}
 
 
 /*IMPLANT*/
-.implant__item {
-    width: 28%;
-    margin-top: 48px;
-    margin-right: 54px;
-    height: auto;
+
+.implant__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-/*остальные стили*/
-
-
-.removableDentures-right {
-    width: 50%;
+.implant__container-up {
+    margin-top: 56px;
 }
 
-.removableDentures-left {
-    width: 50%;
+.implant__item-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--grey-background);
+    border-radius: 10px;
+    padding: 77px 14px 30px 14px;
+    width: 21%;
+}
+
+.implant__item-up:not(:last-child) {
     margin-right: 40px;
 }
 
-.removableDentures-list {
-    list-style: auto;
+.item__description {
+    margin-top: 48px;
 }
+
+.implant__stage-list {
+    row-gap: 40px;
+}
+
+.implant__stage-list li {
+    padding: 0;
+    border-radius: 10px;
+    width: 29%;
+    margin-right: 40px;
+}
+
+.implant__stage-list li:nth-child(3) {
+    margin-right: 0;
+}
+
+.implant__stage-list li:nth-child(6) {
+    margin-right: 0;
+}
+
+.implant__padding-container {
+    padding: 0 25%;
+}
+
+.implant-img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.implant__stage-list .item-number {
+    margin-top: 16px;
+}
+
+.implant__stage-list .item-text::after {
+    content: '';
+    border: none;
+}
+
+/*WHITETENING*/
+
+.whitetening__list-item {
+    margin-top: 32px;
+}
+
+.whitetening__content p:last-child {
+    margin-top: 24px;
+    width: 69.6%;
+}
+
+/*MOUTHGUARDS*/
+
+.mouthguards__list li {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+/*PROFF CLEANING*/
+
+.proff__padding {
+    margin-top: 24px;
+}
+
+.proff__list li {
+    align-items: center;
+    margin-right: 0;
+    width: 23%;
+    padding: 32px 15px 42px 15px;
+}
+
+.proff__list li h5 {
+    min-height: 27%;
+    font-weight: 400;
+    width: 100%;
+}
+
+.result{
+    margin-top: 100px;
+}
+.result .prof__list-item{
+    margin-top: 0;
+}
+
+
+/*DEEP FTOR*/
+.deepFluoridation__list li{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.deepFluoridation__stage-list{
+    justify-content: center;
+}
+
+.deepFluoridation__stage-list li{
+    align-items: center;
+    margin-right: 0;
+    width: 23%;
+    padding: 32px 15px 42px 15px;
+    margin-right: 0;
+}
+
+.deepFluoridation__stage-list li:not(:last-child){
+    margin-right: 90px;
+}
+
+.deepFluoridation__stage-list li h5 {
+    min-height: 27%;
+    font-weight: 400;
+    width: 100%;
+}
+.deepFluoridation__stage-list p {
+  padding-bottom: 42px;
+}
+
+
+/*BRACES*/
+
+.peculiarities{
+    margin-top: 100px;
+}
+
+
+.braces_margin-text{
+    margin-top: 24px;
+}
+
+.peculiarities .tab-accordion{
+    margin-left: 20px;
+}
+
+.tab-accordion .braces_margin-text{
+    list-style: disc;
+}
+
+/*ALINERS*/
+.sub__main-right .aliners__subtitle:not(:first-child){
+    margin-top: 24px;
+}
+
+.aliners__list li{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.aliners__stage-item{
+    margin-top: 24px;
+}
+
+.aliners__stage-list{
+    row-gap: 56px;
+    justify-content: center;
+}
+
+
+.aliners__stage-list li{
+    align-items: center;
+    margin-right: 0;
+    width: 24%;
+    padding: 32px 15px 42px 15px;
+    margin-right: 90px;
+}
+.aliners__stage-list li:nth-child(3){
+    align-items: center;
+    margin-right: 0;
+    width: 24%;
+    padding: 32px 15px 42px 15px;
+    margin-right: 0;
+}
+
+/*остальные стили*/
 
 .tab-accordion {
     list-style: disc;
@@ -399,39 +663,10 @@ body {
     padding-top: 16px;
 }
 
-.removableDentures-container {
-    display: flex !important;
-    margin-bottom: 29px;
-    ;
-
-}
-
-.removableDentures-header {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 33px;
-}
-
-.removableDentures-item {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.removableDentures-list-right {
-    width: 50%;
-}
-
-.removableDentures-list-left {
-    width: 50%;
-    margin-right: 40px;
-}
-
 .proffCleaning-item {
     width: 23%;
     height: auto;
 }
-
 
 .proffCleaning-item .item-description {
     padding-bottom: 32px;
@@ -440,116 +675,6 @@ body {
 .item-icon {
     margin-top: 45px;
     margin-bottom: 46px;
-}
-
-
-.proffCleaning-item .item-text {
-    height: 50px;
-}
-
-.proffCleaning-item .item-line {
-    margin-top: 0;
-}
-
-.proffCleaning__container-down {
-    margin-top: 100px;
-}
-
-.deepFluoridation-descr {
-    list-style: disc;
-}
-
-.deep__blocks {
-    justify-content: space-around;
-}
-
-.deep__item {
-    width: 24%;
-    height: auto;
-}
-
-.deep__item .item-text {
-    height: 23px;
-}
-
-.deep__item .item-line {
-    margin-top: 6%;
-}
-
-.deep__item .item-description {
-    padding-bottom: 32px;
-}
-
-.braces__descr-down {
-    margin-top: 24px;
-    margin-bottom: 26px;
-}
-
-.braces__item {
-    font-size: 20px;
-    font-weight: 400;
-    list-style: disc;
-}
-
-.braces__tab_descr-down {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.contact__title {
-    margin-left: 140px;
-}
-
-.aliners__second-header {
-    margin-top: 24px;
-}
-
-.aliners__item-up {
-    font-size: 20px;
-    font-weight: 400;
-    list-style: disc;
-    margin-left: 30px;
-}
-
-.aliners__second-title {
-    margin-top: 84px;
-    margin-bottom: 16px;
-}
-
-.aliners__blocks {
-    justify-content: center;
-}
-
-.aliners__item {
-    width: 22%;
-    height: auto;
-    margin-right: 94px;
-}
-
-
-.aliners__item .item-text {
-    height: 23px;
-}
-
-.aliners__item .item-line {
-    margin-top: 6%;
-}
-
-.aliners__item .item-description {
-    padding-bottom: 32px;
-}
-
-
-.bridges__item .item-text {
-    height: 23px;
-}
-
-.bridges__item .item-line {
-    margin-top: 6%;
-}
-
-.bridges__item .item-description {
-    padding-bottom: 32px;
 }
 
 .implant__item {

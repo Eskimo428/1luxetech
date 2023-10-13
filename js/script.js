@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const hero = document.querySelector('.hero')
   const mainContainer = document.querySelector('.main__conntainer')
 
+  if(burger){
   burger.addEventListener('click', function () {
     mobileMenu.classList.toggle('open');
 
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       mainContainer.classList.remove('blackout')
     }
   });
-
+}
 
 
 
@@ -103,27 +104,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let tabs = document.querySelectorAll('.tab');
   let tabContents = document.querySelectorAll('.tab-content');
-
-  tabs[0].classList.add('active');
-  tabContents[0].classList.add('active');
-
-  if(tabs){
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-
-      tabs.forEach(function (t) {
-        t.classList.remove('active');
+  
+  if (tabs.length > 0 && tabContents.length > 0) {
+    tabs[0].classList.add('active');
+    tabContents[0].classList.add('active');
+  
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+  
+        tabs.forEach(function (t) {
+          t.classList.remove('active');
+        });
+        tabContents.forEach(function (content) {
+          content.classList.remove('active');
+        });
+  
+        tab.classList.add('active');
+        let tabId = tab.getAttribute('data-tab');
+        document.getElementById(tabId + '-content').classList.add('active');
       });
-      tabContents.forEach(function (content) {
-        content.classList.remove('active');
-      });
-
-      tab.classList.add('active');
-      let tabId = tab.getAttribute('data-tab');
-      document.getElementById(tabId + '-content').classList.add('active');
     });
-  });
-}
+  }
+  
 
 
   //слайдер главная страница
@@ -203,6 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   //Яндекс карты 
+
   ymaps.ready(init);
   function init() {
     let myMap = new ymaps.Map("map", {
