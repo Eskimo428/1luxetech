@@ -1,160 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRLuxe стоматологическая клиника</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRLuxe стоматологическая клиника</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style1.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d162b36a-69ee-4f86-b9f5-c2956e8f45f7&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 </head>
+
 <body>
   <header class="header">
-    <div class="container">
-    <div class="header__logo">
-      <img src="img/logo.svg" alt="Логотип">
-    </div>
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
-        <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
-        <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
-        <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <li class="header__nav-item header__location">
-          <a href="#" class="header__nav-link">
-            <span class="header__nav-city">Санкт-Петербург,</span><br>
-            <span class="header__nav-location">метро Петроградская</span>
-          </a>
-        </li>
-        <li class="header__nav-item header__phone">
-          <a href="tel:+78124158800" class="header__nav-link">
-            <strong>+7(812) 415-88-00</strong><br>
-            <span class="header__phone-label">Заказать звонок</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main__conntainer">
+      <div class="header__logo">
+        <img class="header__logo-img" src="img/logo.svg" alt="Логотип">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="/index.html" class="header__nav-link">Главная</a></li>
+          <li class="header__nav-item"><a href="/Services.html" class="header__nav-link">Услуги</a></li>
+          <li class="header__nav-item"><a href="/About-us.html" class="header__nav-link">О нас</a></li>
+          <li class="header__nav-item"><a href="/Contacts.html" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
 
-  <div class="burger" id="burger">
-
-      <svg class="burger-icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>  
-      <svg class="close-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M18 1.575L16.425 0L9 7.425L1.575 0L0 1.575L7.425 9L0 16.425L1.575 18L9 10.575L16.425 18L18 16.425L10.575 9L18 1.575Z" fill="#2A2A2A"/>
-      </svg> 
-  </div>
-  
-  <div class="mobileMenu" id="mobileMenu">
-       
-    <ul class="header__nav-list">
-      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 10L20 1L11 20L9 12L1 10Z" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <li class=" header__mobile-location">
-        <a href="#">
-          <span>Санкт-Петербург,</span>
-          <br>
-          <span>метро Петроградская</span>
+      <div class="header__nav-item header__location">
+        <a href="#" class="header__nav-link">
+          <span class="header__nav-city">Санкт-Петербург,</span><br>
+          <span class="header__nav-location">метро Петроградская</span>
         </a>
-      </li>
-      <li class="header__burger-link"><a href="/index.html">Главная</a></li>
-      <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
-      <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
-      <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
-    </ul>
-    <div class="header__burger-phone">
-      <a href="tel:+78124158800" class="header__nav-link">
-        <strong>+7(812) 415-88-00</strong><br>
-        <span class="header__mobile-label">Заказать звонок</span>
-      </a>
+      </div>
+
+      <div class="header__nav-item header__phone">
+        <a href="tel:+78124158800" class="header__nav-link header__tel">
+          <strong>+7(812) 415-88-00</strong>
+          <span class="header__phone-label">Заказать звонок</span>
+        </a>
+      </div>
+
+      <div class="burger" id="burger">
+        <svg class="burger-icon" width="20" height="14" viewbox="0 0 20 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 5H1M19 1H1M19 9H1M19 13H1" stroke="#292929" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="close">
+
+        </span>
+      </div>
     </div>
-  </div>
+    <div class="mobileMenu" id="mobileMenu">
+      <ul class="mobile__menu-list">
+        <li class=" header__mobile-location">
+          <a href="#">
+            <span>Санкт-Петербург,</span>
+            <br>
+            <span>метро Петроградская</span>
+          </a>
+        </li>
+        <li class="header__burger-link"><a href="/index.html">Главная</a></li>
+        <li class="header__burger-link"><a href="/Services.html">Услуги</a></li>
+        <li class="header__burger-link"><a href="/About-us.html">О нас</a></li>
+        <li class="header__burger-link"><a href="/Contacts.html">Контакты</a></li>
+      </ul>
+      <div class="header__burger-phone">
+        <a href="tel:+78124158800" class="header__nav-link">
+          <strong>+7(812) 415-88-00</strong><br>
+          <span class="header__mobile-label">Заказать звонок</span>
+        </a>
+      </div>
     </div>
   </header>
 
-    <section class="main">
-        <div class="contacts">
-          <div class="container">
-            <h1 class="contact__title">КОНТАКТЫ</h1>
-          </div>
-         <div class="contact-container">
-          <div class="contact-container__left-block">
-              <div class="contact-form">
-                 <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
-                   с радостью ответим на них!</h3>
-                   <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
-                  <div class="contact-form__input-group">
-                      <label for="name" class="contact-form__label"></label>
-                      <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="contact-form__input" required >
-                  </div>
-                  <div class="contact-form__input-group">
-                      <label for="phone" class="contact-form__label"></label>
-                      <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон" class="contact-form__input" required>
-                  </div>
-                  <div class="contact-form__checkbox-group">
-                    
-                      <input type="checkbox" id="agree" name="agree" class="contact-form__checkbox" required>
-                      <label for="agree" class="contact-form__checkbox-label">
-                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path d="M1.5 11L7.5 17L17 1.5" stroke="#0095DA" stroke-width="2"/>
-                        </svg>
-                    Даю согласие на обработку персональных данных</label>
-                  </div>
-                  <div class="contact-form__submit-button">
-                      <button type="submit" class="contact-form__button">Отправить</button>
-                  </div>
-              </div>
-          </div>
-          <div class="map" id="map"></div>
+  <section class="main">
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contact__title header__main">Контакты</h2>
       </div>
-    </div>
+      <div class="contact-container">
+        <div class="contact-container__left-block">
+          <div class="contact-form">
+            <h3 class="contact__info">Если у Вас остались вопросы, мы <br>
+              с радостью ответим на них!</h3>
+            <p class="contact__descr">Оставьте Ваш телефон и мы Вам перезвоним</p>
+            <form action="#" class="contact-form__input-group" method="post" id="feedback-form-1"
+              enctype="multipart/form-data">
+              <input type="text" name="name" class="contact-form__input" placeholder="Имя" minlength="3" required
+                pattern="^[А-Яа-яЁёA-Za-z]+$" title="Пожалуйста, введите правильное имя">
+              <input type="tel" name="phone" class="contact-form__input" placeholder="+7(___) ___-__-__" minlength="11"
+                maxlength="30" required>
+              <div class="checkbox__container">
+                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required
+                  title="Пожалуйста, отметьте это поле" />
+                <label class="contact-form__checkbox-label" for="checkbox">Даю согласие на обработку персональных
+                  данных</label>
+              </div>
+              <button type="submit" class="btn contact-form__button" name="submit"
+                id="submit-feedback-1">Отправить</button>
+              <div class="delivered-1"></div>
+            </form>
+          </div>
+        </div>
+        <div class="map" id="map"></div>
+      </div>
+    </section>
 
     <div class="footer">
-    <div class="container">
       <div class="footer__container">
-        <a href="#"><img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"></a>
-        <div class="footer__item">
+        <a href="#"><img src="https://1luxe.ru/wp-content/uploads/2023/09/logo-footer.svg" alt="Логотип"
+            class="footer__logo"></a>
+
+        <div class="footer__mobile-container">
+
+
+          <div class="footer__item">
             <h2 class="footer__title">Услуги</h2>
-          <ul class="footer__list">
-              <li class="footer__item"><a href="/warning.html">Терапевтические услуги</a></li>
-              <li class="footer__item"><a href="/warning.html">Хирургические услуги</a></li>
-              <li class="footer__item"><a href="/warning.html">Имплантация зубов</a></li>
-              <li class="footer__item"><a href="/warning.html">Ортопедические услуги</a></li>
-              <li class="footer__item"><a href="/warning.html">Эстетические услуги</a></li>
-              <li class="footer__item"><a href="/warning.html">Профилактика</a></li>
-              <li class="footer__item"><a href="/warning.html">Ортодонтические услуги</a></li>
-          </ul>
-      </div>
-      <div class="footer__item">
-          <h2 class="footer__title">Контакты</h2>
-          <ul class="footer__list">
-              <li class="footer__item">+7(812) 415-88-00</li>
-              <li class="footer__item">info@1luxe.ru</li>
-              <li class="footer__item"><a href="/warning.html">Политика конфиденциальности</a></li>
-          </ul>
-      </div>
-      <div class="footer__item">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Терапевтические услуги</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Хирургические услуги</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Имплантация зубов</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Ортопедические услуги</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Эстетические услуги</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Профилактика</a></li>
+              <li class="footer__item"><a href="https://1luxe.ru/?page_id=4314">Ортодонтические услуги</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="footer__item right">
+            <h2 class="footer__title right">Контакты</h2>
+            <ul class="footer__list right">
+              <li class="footer__item right">+7(812) 415-88-00</li>
+              <li class="footer__item right">info@1luxe.ru</li>
+              <li class="footer__item right"><a href="#" class="right">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__item center">
           <h2 class="footer__title">О Нас</h2>
-          <ul class="footer__list">
-              <li class="footer__item">ООО "ЛЮКС"</li>
-              <li class="footer__item">будни, временно:11:00 - 20:30</li>
-              <li class="footer__item">сб: временно выходной</li>
-              <li class="footer__item">вс: выходной</li>
+          <ul class="footer__list center">
+            <li class="footer__item center">ООО "ЛЮКС"</li>
+            <li class="footer__item center">будни, временно:11:00 - 20:30</li>
+            <li class="footer__item center">сб: временно выходной</li>
+            <li class="footer__item center">вс: выходной</li>
           </ul>
+        </div>
+
       </div>
+
     </div>
-  </div>
-  </div>
- 
-      </section>
-      <script defer src="js/script.js"></script>
+
+  </section>
+  <script defer src="js/script.js"></script>
 </body>
+
 </html>

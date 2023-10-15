@@ -1511,128 +1511,185 @@ a {
     /* color: var(); ругается валидатор*/
   }
 
-
-  .contacts {
-    padding-top: 36px;
-  }
-
-  .contact__title {
-    line-height: normal;
-    padding-bottom: 0;
-  }
-
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-container__left-block {
-    width: 100%;
-    margin-top: 16px;
-    padding: 36px 26px 30px 26px;
-    background-image: url(https://1luxe.ru/wp-content/uploads/2023/10/mobile-contacts-back.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .contact__info {
-    font-size: 16px;
-  }
-
-  .contact__descr {
-    font-size: 14px;
-    margin-top: 24px;
-    padding: 0 60px 24px 60px;
-  }
-
-  .contact-form__input {
-    padding: 14px 24px;
-    height: 47px;
-  }
-
-  .contact-form__input:nth-child(2) {
-    margin-top: 8px;
-  }
-
-  .checkbox__container {
-    margin-top: 16px;
-  }
-
-  .contact-form__checkbox-label {
-    font-size: 14px;
-    line-height: normal;
-  }
-
-  .contact-form__checkbox-label::before {
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-  }
-
-  .checkbox:checked+.contact-form__checkbox-label::before {
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-  }
-
-  .contact-form__button {
-    padding: 8px 16px;
-    margin-top: 24px;
-  }
-
-  .map {
-    width: 100%;
-    height: 400px;
-  }
-
-
-  .footer__container {
-    padding: 32px 8px;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .footer__mobile-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 32px;
-  }
-
-  .footer__mobile-container div:nth-child(2) {
-    width: 50%;
-  }
-
-  .right {
+  /*Профессиональная чистка*/
+  .pulpitis__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    text-align: right !important;
-    font-size: 12px;
-  }
-
-  .footer__logo {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-right: 0;
-    display: block;
-    margin: 0 auto;
-    width: 46px;
-  }
-
-  .footer__title {
-    font-size: 14px;
-    line-height: normal;
     padding-bottom: 16px;
+
   }
 
-  .footer__item a {
-    font-size: 12px;
+  .pulpitis__right {
+    width: 100%;
+    padding-left: 0;
   }
 
-  .center {
-    align-items: center;
-    font-size: 12px;
-    margin-bottom: 3px;
+  .pulpitis__right-title {
+    padding-top: 16px;
+    font-size: 14px;
   }
+
+  .pulpitis__stage-title {
+    margin-top: 36px;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.proffCleaning-item {
+  width: 42%;
+}
+
+.pulpitis__blocks {
+  justify-content: space-between;
+
+}
+
+.item-text {
+  word-break: break-all;
+}
+
+.left-block {
+  width: 100%;
+}
+
+.before-after {
+  width: 100%;
+}
+
+.tab-content {
+  display: block;
+  padding-bottom: 16px;
+}
+
+.proff-Cleaning {
+  width: 100%;
+}
+
+.contact-title
+
+/*Профессиональная чистка*/
+.contacts {
+  padding-top: 36px;
+}
+
+.contact__title {
+  line-height: normal;
+  padding-bottom: 0;
+}
+
+.contact-container {
+  flex-direction: column;
+}
+
+.contact-container__left-block {
+  width: 100%;
+  margin-top: 16px;
+  padding: 36px 26px 30px 26px;
+  background-image: url(https://1luxe.ru/wp-content/uploads/2023/10/mobile-contacts-back.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__info {
+  font-size: 16px;
+}
+
+.contact__descr {
+  font-size: 14px;
+  margin-top: 24px;
+  padding: 0 60px 24px 60px;
+}
+
+.contact-form__input {
+  padding: 14px 24px;
+  height: 47px;
+}
+
+.contact-form__input:nth-child(2) {
+  margin-top: 8px;
+}
+
+.checkbox__container {
+  margin-top: 16px;
+}
+
+.contact-form__checkbox-label {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.contact-form__checkbox-label::before {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+}
+
+.checkbox:checked+.contact-form__checkbox-label::before {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+}
+
+.contact-form__button {
+  padding: 8px 16px;
+  margin-top: 24px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+
+.footer__container {
+  padding: 32px 8px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__mobile-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.footer__mobile-container div:nth-child(2) {
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right !important;
+  font-size: 12px;
+}
+
+.footer__logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  display: block;
+  margin: 0 auto;
+  width: 46px;
+}
+
+.footer__title {
+  font-size: 14px;
+  line-height: normal;
+  padding-bottom: 16px;
+}
+
+.footer__item a {
+  font-size: 12px;
+}
+
+.center {
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
 
 }
