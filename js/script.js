@@ -10,25 +10,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const hero = document.querySelector('.hero')
   const mainContainer = document.querySelector('.main__conntainer')
 
-  if(burger){
-  burger.addEventListener('click', function () {
-    mobileMenu.classList.toggle('open');
+  if (burger) {
+    burger.addEventListener('click', function () {
+      mobileMenu.classList.toggle('open');
 
-    if (mobileMenu.classList.contains('open')) {
-      burgerIcon.style.display = 'none';
-      closeIcon.classList.add('hh');
-      mobileMenuList.classList.add('hh');
-      hero.classList.add('blackout')
-      mainContainer.classList.add('blackout')
-    } else {
-      burgerIcon.style.display = 'block';
-      closeIcon.classList.remove('hh');
-      mobileMenuList.classList.remove('hh');
-      hero.classList.remove('blackout')
-      mainContainer.classList.remove('blackout')
-    }
-  });
-}
+      if (mobileMenu.classList.contains('open')) {
+        burgerIcon.style.display = 'none';
+        closeIcon.classList.add('hh');
+        mobileMenuList.classList.add('hh');
+        hero.classList.add('blackout')
+        mainContainer.classList.add('blackout')
+      } else {
+        burgerIcon.style.display = 'block';
+        closeIcon.classList.remove('hh');
+        mobileMenuList.classList.remove('hh');
+        hero.classList.remove('blackout')
+        mainContainer.classList.remove('blackout')
+      }
+    });
+  }
 
 
 
@@ -71,32 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   //ACCORDEON-SERVICE-PAGE
-  let accordionItemsServices = document.querySelectorAll('.services-item');
 
-  accordionItemsServices.forEach(function (item) {
-    let header = item.querySelector('h2');
-    let content = item.querySelector('.services-content');
-
-    header.addEventListener('click', function (event) {
-      if (event.target.closest('.services-item') === item) {
-        if (item.classList.contains('open')) {
-          item.classList.remove('open');
-          header.classList.remove('rotate'); // Удалите класс при закрытии
-          content.style.display = 'none';
-        } else {
-          accordionItemsServices.forEach(function (accItem) {
-            accItem.classList.remove('open');
-            accItem.querySelector('.services-content').style.display = 'none';
-            accItem.querySelector('h2').classList.remove('rotate'); // Удалите класс при закрытии других элементов
-          });
-
-          item.classList.add('open');
-          header.classList.add('rotate'); // Добавьте класс при открытии
-          content.style.display = 'flex';
-        }
-      }
-    });
-  });
 
 
 
@@ -104,28 +79,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let tabs = document.querySelectorAll('.tab');
   let tabContents = document.querySelectorAll('.tab-content');
-  
+
   if (tabs.length > 0 && tabContents.length > 0) {
     tabs[0].classList.add('active');
     tabContents[0].classList.add('active');
-  
+
     tabs.forEach(function (tab) {
       tab.addEventListener('click', function () {
-  
+
         tabs.forEach(function (t) {
           t.classList.remove('active');
         });
         tabContents.forEach(function (content) {
           content.classList.remove('active');
         });
-  
+
         tab.classList.add('active');
         let tabId = tab.getAttribute('data-tab');
         document.getElementById(tabId + '-content').classList.add('active');
       });
     });
   }
-  
+
 
 
   //слайдер главная страница
